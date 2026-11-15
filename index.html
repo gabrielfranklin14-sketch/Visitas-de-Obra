@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<title>Visitas de Obra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f5c6e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Visitas">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="top">
+  <a id="back" class="ib" href="#/" aria-label="Voltar">‹</a>
+  <h1 id="title">Visitas de Obra</h1>
+  <div id="hact"></div>
+</header>
+<main id="app"></main>
+<nav id="tabs">
+  <a href="#/" data-tab="">🏗️<span>Obras</span></a>
+  <a href="#/modelos" data-tab="modelos">📋<span>Modelos</span></a>
+  <a href="#/config" data-tab="config">⚙️<span>Ajustes</span></a>
+</nav>
+<div id="modals"></div>
+<div id="toast" role="status"></div>
+<input type="file" id="fcam" accept="image/*" capture="environment" hidden>
+<input type="file" id="fgal" accept="image/*" multiple hidden>
+<input type="file" id="fimp" accept="application/json,.json" hidden>
+<noscript>Este aplicativo precisa de JavaScript.</noscript>
+<script src="app.js"></script>
+</body>
+</html>
